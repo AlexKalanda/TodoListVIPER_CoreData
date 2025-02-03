@@ -29,6 +29,41 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "843A975B2D5106AA003972EA"
+               BuildableName = "TodoListVIPER_CoreDataTests.xctest"
+               BlueprintName = "TodoListVIPER_CoreDataTests"
+               ReferencedContainer = "container:TodoListVIPER_CoreData.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "843A97712D512B67003972EA"
+               BuildableName = "TodoListVIPER_CoreDataTest.xctest"
+               BlueprintName = "TodoListVIPER_CoreDataTest"
+               ReferencedContainer = "container:TodoListVIPER_CoreData.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "843A977E2D512CCC003972EA"
+               BuildableName = "TodoListVIPER_CoreDataTestss.xctest"
+               BlueprintName = "TodoListVIPER_CoreDataTestss"
+               ReferencedContainer = "container:TodoListVIPER_CoreData.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"

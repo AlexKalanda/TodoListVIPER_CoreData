@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class URLManager {
+ class URLManager {
     static let shared = URLManager(); private init() { }
     
     private let getaway = "https://"

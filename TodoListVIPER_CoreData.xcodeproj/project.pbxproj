@@ -38,6 +38,30 @@
 		842882D72D4D29BD001AD082 /* TodoAddBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842882D62D4D29BD001AD082 /* TodoAddBuilder.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		843A97602D5106AB003972EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842881ED2D4A1849001AD082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 842881F42D4A1849001AD082;
+			remoteInfo = TodoListVIPER_CoreData;
+		};
+		843A97762D512B67003972EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842881ED2D4A1849001AD082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 842881F42D4A1849001AD082;
+			remoteInfo = TodoListVIPER_CoreData;
+		};
+		843A97832D512CCC003972EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842881ED2D4A1849001AD082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 842881F42D4A1849001AD082;
+			remoteInfo = TodoListVIPER_CoreData;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		842881F52D4A1849001AD082 /* TodoListVIPER_CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoListVIPER_CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8428821B2D4A1873001AD082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +93,9 @@
 		842882D22D4D2987001AD082 /* TodoAddInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAddInteractor.swift; sourceTree = "<group>"; };
 		842882D42D4D29A0001AD082 /* TodoAddRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAddRouter.swift; sourceTree = "<group>"; };
 		842882D62D4D29BD001AD082 /* TodoAddBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAddBuilder.swift; sourceTree = "<group>"; };
+		843A975C2D5106AB003972EA /* TodoListVIPER_CoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListVIPER_CoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		843A97722D512B67003972EA /* TodoListVIPER_CoreDataTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListVIPER_CoreDataTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		843A977F2D512CCC003972EA /* TodoListVIPER_CoreDataTestss.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListVIPER_CoreDataTestss.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -110,10 +137,36 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		843A97802D512CCC003972EA /* TodoListVIPER_CoreDataTestss */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TodoListVIPER_CoreDataTestss;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		842881F22D4A1849001AD082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843A97592D5106AA003972EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843A976F2D512B67003972EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843A977C2D512CCC003972EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,6 +181,7 @@
 			children = (
 				842882262D4A1873001AD082 /* TodoListVIPER_CoreData */,
 				842882242D4A1873001AD082 /* TodoListVIPER_CoreData.xcdatamodeld */,
+				843A97802D512CCC003972EA /* TodoListVIPER_CoreDataTestss */,
 				842881F62D4A1849001AD082 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,6 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				842881F52D4A1849001AD082 /* TodoListVIPER_CoreData.app */,
+				843A975C2D5106AB003972EA /* TodoListVIPER_CoreDataTests.xctest */,
+				843A97722D512B67003972EA /* TodoListVIPER_CoreDataTest.xctest */,
+				843A977F2D512CCC003972EA /* TodoListVIPER_CoreDataTestss.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,6 +338,69 @@
 			productReference = 842881F52D4A1849001AD082 /* TodoListVIPER_CoreData.app */;
 			productType = "com.apple.product-type.application";
 		};
+		843A975B2D5106AA003972EA /* TodoListVIPER_CoreDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843A97642D5106AB003972EA /* Build configuration list for PBXNativeTarget "TodoListVIPER_CoreDataTests" */;
+			buildPhases = (
+				843A97582D5106AA003972EA /* Sources */,
+				843A97592D5106AA003972EA /* Frameworks */,
+				843A975A2D5106AA003972EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				843A97612D5106AB003972EA /* PBXTargetDependency */,
+			);
+			name = TodoListVIPER_CoreDataTests;
+			packageProductDependencies = (
+			);
+			productName = TodoListVIPER_CoreDataTests;
+			productReference = 843A975C2D5106AB003972EA /* TodoListVIPER_CoreDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		843A97712D512B67003972EA /* TodoListVIPER_CoreDataTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843A97782D512B67003972EA /* Build configuration list for PBXNativeTarget "TodoListVIPER_CoreDataTest" */;
+			buildPhases = (
+				843A976E2D512B67003972EA /* Sources */,
+				843A976F2D512B67003972EA /* Frameworks */,
+				843A97702D512B67003972EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				843A97772D512B67003972EA /* PBXTargetDependency */,
+			);
+			name = TodoListVIPER_CoreDataTest;
+			packageProductDependencies = (
+			);
+			productName = TodoListVIPER_CoreDataTest;
+			productReference = 843A97722D512B67003972EA /* TodoListVIPER_CoreDataTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		843A977E2D512CCC003972EA /* TodoListVIPER_CoreDataTestss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843A97852D512CCC003972EA /* Build configuration list for PBXNativeTarget "TodoListVIPER_CoreDataTestss" */;
+			buildPhases = (
+				843A977B2D512CCC003972EA /* Sources */,
+				843A977C2D512CCC003972EA /* Frameworks */,
+				843A977D2D512CCC003972EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				843A97842D512CCC003972EA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				843A97802D512CCC003972EA /* TodoListVIPER_CoreDataTestss */,
+			);
+			name = TodoListVIPER_CoreDataTestss;
+			packageProductDependencies = (
+			);
+			productName = TodoListVIPER_CoreDataTestss;
+			productReference = 843A977F2D512CCC003972EA /* TodoListVIPER_CoreDataTestss.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -293,6 +413,19 @@
 				TargetAttributes = {
 					842881F42D4A1849001AD082 = {
 						CreatedOnToolsVersion = 16.0;
+					};
+					843A975B2D5106AA003972EA = {
+						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
+						TestTargetID = 842881F42D4A1849001AD082;
+					};
+					843A97712D512B67003972EA = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 842881F42D4A1849001AD082;
+					};
+					843A977E2D512CCC003972EA = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 842881F42D4A1849001AD082;
 					};
 				};
 			};
@@ -311,12 +444,36 @@
 			projectRoot = "";
 			targets = (
 				842881F42D4A1849001AD082 /* TodoListVIPER_CoreData */,
+				843A975B2D5106AA003972EA /* TodoListVIPER_CoreDataTests */,
+				843A97712D512B67003972EA /* TodoListVIPER_CoreDataTest */,
+				843A977E2D512CCC003972EA /* TodoListVIPER_CoreDataTestss */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		842881F32D4A1849001AD082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843A975A2D5106AA003972EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843A97702D512B67003972EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843A977D2D512CCC003972EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,7 +519,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		843A97582D5106AA003972EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843A976E2D512B67003972EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843A977B2D512CCC003972EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		843A97612D5106AB003972EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 842881F42D4A1849001AD082 /* TodoListVIPER_CoreData */;
+			targetProxy = 843A97602D5106AB003972EA /* PBXContainerItemProxy */;
+		};
+		843A97772D512B67003972EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 842881F42D4A1849001AD082 /* TodoListVIPER_CoreData */;
+			targetProxy = 843A97762D512B67003972EA /* PBXContainerItemProxy */;
+		};
+		843A97842D512CCC003972EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 842881F42D4A1849001AD082 /* TodoListVIPER_CoreData */;
+			targetProxy = 843A97832D512CCC003972EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8428820C2D4A184A001AD082 /* Debug */ = {
@@ -538,6 +734,119 @@
 			};
 			name = Release;
 		};
+		843A97622D5106AB003972EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CN66MVDHVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alex.com.TodoListVIPER-CoreDataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoListVIPER_CoreDataTests/TodoListVIPER_CoreDataTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoListVIPER_CoreData.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TodoListVIPER_CoreData";
+			};
+			name = Debug;
+		};
+		843A97632D5106AB003972EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CN66MVDHVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alex.com.TodoListVIPER-CoreDataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoListVIPER_CoreDataTests/TodoListVIPER_CoreDataTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoListVIPER_CoreData.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TodoListVIPER_CoreData";
+			};
+			name = Release;
+		};
+		843A97792D512B67003972EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CN66MVDHVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alex.com.TodoListVIPER-CoreDataTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoListVIPER_CoreData.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TodoListVIPER_CoreData";
+			};
+			name = Debug;
+		};
+		843A977A2D512B67003972EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CN66MVDHVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alex.com.TodoListVIPER-CoreDataTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoListVIPER_CoreData.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TodoListVIPER_CoreData";
+			};
+			name = Release;
+		};
+		843A97862D512CCC003972EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CN66MVDHVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alex.com.TodoListVIPER-CoreDataTestss";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoListVIPER_CoreData.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TodoListVIPER_CoreData";
+			};
+			name = Debug;
+		};
+		843A97872D512CCC003972EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CN66MVDHVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alex.com.TodoListVIPER-CoreDataTestss";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoListVIPER_CoreData.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TodoListVIPER_CoreData";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -555,6 +864,33 @@
 			buildConfigurations = (
 				8428820C2D4A184A001AD082 /* Debug */,
 				8428820D2D4A184A001AD082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		843A97642D5106AB003972EA /* Build configuration list for PBXNativeTarget "TodoListVIPER_CoreDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843A97622D5106AB003972EA /* Debug */,
+				843A97632D5106AB003972EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		843A97782D512B67003972EA /* Build configuration list for PBXNativeTarget "TodoListVIPER_CoreDataTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843A97792D512B67003972EA /* Debug */,
+				843A977A2D512B67003972EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		843A97852D512CCC003972EA /* Build configuration list for PBXNativeTarget "TodoListVIPER_CoreDataTestss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843A97862D512CCC003972EA /* Debug */,
+				843A97872D512CCC003972EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

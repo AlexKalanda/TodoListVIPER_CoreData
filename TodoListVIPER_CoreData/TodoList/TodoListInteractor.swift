@@ -15,6 +15,7 @@ protocol TodoListInteractorProtocol: AnyObject {
     func toggleCompleted(at index: Int) //
     func refreshData()
     func searchTodo(with searchText: String)
+    
 }
 
 
@@ -26,13 +27,11 @@ final class TodoListInteractor: TodoListInteractorProtocol {
     // загрузка задач и сохранение в coredata
     func fetchTodos() {
         if !UserDefaultService.shared.isFirstLaunch {
-            print("first pusk")
             Task {
                 do {
                     let req = try await networkService.fetchTodosResponse()
                     for todo in req.todos {
                         coreDataService.createTodo(todos: todo)
-                        print("first pusk: \(todo.userId)")
                     }
                     await MainActor.run {
                         self.coreDataService.fetchTodos()
@@ -44,11 +43,7 @@ final class TodoListInteractor: TodoListInteractorProtocol {
                 }
             }
         } else {
-            print("not first launch")
             coreDataService.fetchTodos()
-            for t in coreDataService.todos {
-                print("not first launch: \(t.userId)")
-            }
             presenter?.didFetchTodos()
         }
     }
@@ -87,6 +82,7 @@ final class TodoListInteractor: TodoListInteractorProtocol {
         }
         presenter?.didFetchTodos()
     }
+    
     
 }
 

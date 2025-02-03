@@ -8,8 +8,12 @@
 import Foundation
 
 class NetworkService {
-    static let shared = NetworkService(); private init() { }
-    private let session = URLSession.shared
+    static let shared = NetworkService()
+    private let session: URLSessionProtocol
+    
+    init(session: URLSessionProtocol = URLSession.shared as URLSessionProtocol) {
+        self.session = session
+    }
     
     func fetchTodosResponse() async throws -> TodoListResponse {
         guard let url = URLManager.shared.createURL() else {
@@ -26,3 +30,9 @@ class NetworkService {
     }
     
 }
+
+protocol URLSessionProtocol {
+    func data(from url: URL) async throws -> (Data, URLResponse)
+}
+
+extension URLSession: URLSessionProtocol {}

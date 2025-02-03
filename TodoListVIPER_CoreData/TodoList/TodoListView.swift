@@ -108,6 +108,20 @@ final class TodoListView: UIViewController, TodoListViewProtocol {
         navigationController?.pushViewController(addTodoVC, animated: true)
     }
     
+    private func shareTodo(at index: Int) {
+        guard let todo = presenter?.todo(at: index) else { return }
+        let todoText = "Задача: \(todo.todo)"
+        
+        let activityViewController = UIActivityViewController(activityItems: [todoText], applicationActivities: nil)
+        
+        if let popoverController = activityViewController.popoverPresentationController {
+            popoverController.sourceView = self.view
+            popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+            popoverController.permittedArrowDirections = []
+        }
+        present(activityViewController, animated: true, completion: nil)
+    }
+    
 }
 
 // MARK: - Расшерение для Delegat
@@ -130,12 +144,11 @@ extension TodoListView: UITableViewDelegate {
         return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { suggestedActions in
             
             let  editAction = UIAction(title: "Редактирование", image: UIImage(systemName: "square.and.pencil")) { [weak self] _ in
-               print("Edit")
                 self?.presenter?.editTodo(at: indexPath.row)
             }
             
             let shareAction = UIAction(title: "Поделиться", image: UIImage(systemName: "square.and.arrow.up")) { [weak self] _ in
-                print("Share")
+                self?.shareTodo(at: indexPath.row)
             }
             
             let deleteAction = UIAction(title: "Удалить", image: UIImage(systemName: "trash"),attributes: .destructive) { [weak self] _ in

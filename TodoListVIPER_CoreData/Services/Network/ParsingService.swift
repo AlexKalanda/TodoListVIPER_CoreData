@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class ParsingService {
+ class ParsingService {
     static let shared = ParsingService(); private init() { }
     private let decoder = JSONDecoder()
     
